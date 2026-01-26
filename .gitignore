@@ -1,0 +1,13 @@
+# Compiled files
+*.exe
+*.out
+*.o
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.log
+
+# OS files
+.DS_Store
