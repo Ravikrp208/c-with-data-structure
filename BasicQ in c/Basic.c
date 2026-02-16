@@ -1,22 +1,30 @@
+
 #include<stdio.h>
-void main() {
-    printf("hello c Programming");
+int main()
+{
+    int arr[3][3] , i,j;
+    printf("ente a elements:");
 
-}
-
-/*#include<stdio.h>
-int main(){
-    int n, fact =1;
-
-    printf("Entr a no ");
-    scanf("%d",&n);
-
-    for(int i =1; i<=n; i++){
-        fact =fact*i;
+    // input 
+    for(int i =0; i<3; i++)
+    {
+        for(int j=0; j<i; j++)
+        {
+            scanf("%d",&arr[i][j]);
+        }
     }
-    printf("factorail no %d" , fact );
-} */
 
+    //optut
 
-//prime 
-
+    for(int i=0; i<3; i++)
+    {
+        for(int j=0; j<i; j++)
+        {
+          if(i==j)
+          {
+            printf("%d",arr[i][j]);
+          }
+        }
+    }
+    return 0;
+}
