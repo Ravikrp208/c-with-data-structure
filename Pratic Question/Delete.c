@@ -1,24 +1,24 @@
-void delend() {
-    struct node *p, *next;
+#include <stdio.h>
+#include <stdlib.h>
 
-    if (h == NULL) {
-        printf("List is empty\n");
-    }
-    else if (h->next == NULL) {   // only one node
-        free(h);
-        h = NULL;
-        printf("Last node deleted\n");
-    }
-    else {
-        p= h;
+int main()
+{
+    int item, i = 0;
+    int arr[5] = {12, 34, 45, 67, 23};
 
-        while (p->next != NULL) {
-            p1 =p;
-            p = p->next;
+    printf("Enter search element: ");
+    scanf("%d", &item);
+
+    while(i < 5)
+    {
+        if(arr[i] == item)
+        {
+            printf(" %d ", i);
+            exit(0);
         }
-
-        p1->next = NULL;
-        free(p);
-        printf("Last node deleted\n");
+        i++;
     }
+
+    printf("Element not found in the array");
+    return 0;
 }
